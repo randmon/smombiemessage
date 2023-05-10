@@ -1,21 +1,29 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { View } from 'react-native';
 import Controls from './components/input/Controls';
+import MessageArea from './components/messaging/message-area';
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <View style={{
+      flex: 1,
+      backgroundColor: '#fff',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      marginTop: 50,
+    }}>
       <StatusBar style="auto" />
-      <Controls />
+      <View style={{
+        width: '100%',
+        flexGrow: 1,
+      }}>
+        <MessageArea/>
+      </View>
+      <View style={{
+        width: '100%',
+      }}>
+        <Controls/>
+      </View>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
