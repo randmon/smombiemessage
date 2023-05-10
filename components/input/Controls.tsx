@@ -15,6 +15,7 @@ const Controls = () => {
             alignItems: 'center',
             width: '100%',
             paddingVertical: 10,
+            backgroundColor: '#0f0f0e',
         }}>
             <IconButton color={backgroundColor} size={x} vibration onPress={function (): void {Alert.alert('You tapped the button!');}}>
                 <Feather name='circle' size={x} color='#EF476F' />

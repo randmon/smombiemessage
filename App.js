@@ -1,3 +1,4 @@
+import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { View } from 'react-native';
 import Controls from './components/input/Controls';
@@ -10,17 +11,18 @@ export default function App() {
       backgroundColor: '#fff',
       alignItems: 'center',
       justifyContent: 'space-between',
-      marginTop: 50,
+      marginTop: 40,
     }}>
       <StatusBar style="auto" />
       <View style={{
         width: '100%',
-        flexGrow: 1,
+        maxHeight: '90%',
       }}>
         <MessageArea/>
       </View>
       <View style={{
         width: '100%',
+        maxHeight: '10%',
       }}>
         <Controls/>
       </View>

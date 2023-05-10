@@ -1,14 +1,11 @@
 import React from 'react';
-import { View } from 'react-native';
+import { ScrollView, View } from 'react-native';
 import MessageBubble from './message-bubble';
 
 const MessageArea = () => {
     return (
-        <View style={{
-            margin: 10,
-            paddingHorizontal: 10,
-            paddingVertical: 20,
-            flexGrow: 1,
+        <ScrollView style={{
+            padding: 10,
         }}>
             <MessageBubble align='left'>
                 Hello?
@@ -32,9 +29,36 @@ const MessageArea = () => {
                 💖
             </MessageBubble>
             <MessageBubble align='left'>
-                Bye!
+                💖
             </MessageBubble>
-        </View>
+            <MessageBubble align='right'>
+                💖
+            </MessageBubble>
+            <MessageBubble align='left'>
+                💖
+            </MessageBubble>
+            <MessageBubble align='right'>
+                💖
+            </MessageBubble>
+            <MessageBubble align='left'>
+                💖
+            </MessageBubble>
+            <MessageBubble align='right'>
+                💖
+            </MessageBubble>
+            <MessageBubble align='left'>
+                💖
+            </MessageBubble>
+            <MessageBubble align='right'>
+                💖
+            </MessageBubble>
+            <MessageBubble align='left'>
+                💖
+            </MessageBubble>
+            <MessageBubble align='right'>
+                💖
+            </MessageBubble>
+        </ScrollView>
     );
 };
 
